@@ -1,33 +1,21 @@
-import React from 'react';
+import 'swiper/swiper.min.css';
+import './assets/boxicons-2.0.7/css/boxicons.min.css';
+import './App.scss';
+import { BrowserRouter } from 'react-router-dom';
+import Header from './components/header/Header';
+import Footer from './components/footer/Footer';
 
-import { Route, Switch } from 'react-router-dom';
+import Routes from './config/Routes';
 
-import Home from '../pages/Home';
-import Catalog from '../pages/Catalog';
-import Detail from '../pages/detail/Detail';
-
-const Routes = () => {
+function App() {
     return (
-        <Switch>
-            <Route
-                path='/:category/search/:keyword'
-                component={Catalog}
-            />
-            <Route
-                path='/:category/:id'
-                component={Detail}
-            />
-            <Route
-                path='/:category'
-                component={Catalog}
-            />
-            <Route
-                path='/'
-                exact
-                component={Home}
-            />
-        </Switch>
+        <BrowserRouter>
+            <Header />
+            <Routes />
+            <Footer />
+        </BrowserRouter>
     );
 }
 
-export default Routes;
+export default App;
+
