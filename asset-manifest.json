@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/moviedb-react/static/css/main.bca91458.chunk.css",
+    "main.js": "/moviedb-react/static/js/main.7ca59903.chunk.js",
+    "main.js.map": "/moviedb-react/static/js/main.7ca59903.chunk.js.map",
+    "runtime-main.js": "/moviedb-react/static/js/runtime-main.15401b99.js",
+    "runtime-main.js.map": "/moviedb-react/static/js/runtime-main.15401b99.js.map",
+    "static/css/2.29986bba.chunk.css": "/moviedb-react/static/css/2.29986bba.chunk.css",
+    "static/js/2.d3a566be.chunk.js": "/moviedb-react/static/js/2.d3a566be.chunk.js",
+    "static/js/2.d3a566be.chunk.js.map": "/moviedb-react/static/js/2.d3a566be.chunk.js.map",
+    "index.html": "/moviedb-react/index.html",
+    "static/css/2.29986bba.chunk.css.map": "/moviedb-react/static/css/2.29986bba.chunk.css.map",
+    "static/css/main.bca91458.chunk.css.map": "/moviedb-react/static/css/main.bca91458.chunk.css.map",
+    "static/js/2.d3a566be.chunk.js.LICENSE.txt": "/moviedb-react/static/js/2.d3a566be.chunk.js.LICENSE.txt",
+    "static/media/boxicons.min.css": "/moviedb-react/static/media/boxicons.cbd149c5.ttf",
+    "static/media/footer-bg.67e95f05.jpg": "/moviedb-react/static/media/footer-bg.67e95f05.jpg",
+    "static/media/tmovie.67797e94.png": "/moviedb-react/static/media/tmovie.67797e94.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.15401b99.js",
+    "static/css/2.29986bba.chunk.css",
+    "static/js/2.d3a566be.chunk.js",
+    "static/css/main.bca91458.chunk.css",
+    "static/js/main.7ca59903.chunk.js"
+  ]
+}
