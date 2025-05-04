@@ -1,21 +1,41 @@
-import 'swiper/swiper.min.css';
-import './assets/boxicons-2.0.7/css/boxicons.min.css';
-import './App.scss';
-import { BrowserRouter } from 'react-router-dom';
-import Header from './components/header/Header';
-import Footer from './components/footer/Footer';
 
-import Routes from './config/Routes';
+import React from 'react';
 
-function App() {
+import { Route, Switch } from 'react-router-dom';
+
+import Home from '../pages/Home';
+import Catalog from '../pages/Catalog';
+import Detail from '../pages/detail/Detail';
+
+
+const Routes = () => {
     return (
-        <BrowserRouter>
-            <Header />
-            <Routes />
-            <Footer />
-        </BrowserRouter>
+        <Switch>
+            <Route
+                path='/moviedb-react'exact
+                component={Home}
+            />
+            <Route
+                path='/'exact
+                component={Home}
+            />
+            <Route
+                path='/:category/search/:keyword'
+                component={Catalog}
+            />
+            <Route
+                path='/:category/:id'
+                component={Detail}
+            />
+            <Route
+                path='/:category'
+                component={Catalog}
+            />
+         
+        </Switch>
     );
 }
 
-export default App;
+export default Routes; 
+
 
