@@ -17,6 +17,35 @@
     }
 }
 
+    .logo h4:hover{
+        color: white;
+    }
+    .heart-icon-btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 8px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+
+            &:hover {
+                background-color: rgba(255, 255, 255, 0);
+                
+                svg {
+                    fill: #ff0000;
+                    stroke: #ff0000;
+                    transform: scale(1.1);
+                }
+            }
+
+            svg {
+                transition: all 0.3s ease;
+            }
+        }        
+
 .header {
     height: $header-height;
     position: fixed;

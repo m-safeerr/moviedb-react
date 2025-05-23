@@ -9,6 +9,98 @@
     border-radius: $border-radius;
     margin-bottom: 1rem;
 
+ .heart-btn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: rgba(0, 0, 0, 0);
+        border: none;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        z-index: 2;
+
+        &:hover {
+            background: rgba(0, 0, 0, 0);
+            transform: scale(1.1);
+        }
+
+        svg {
+            transition: all 0.3s ease;
+        }
+
+        &.favorite {
+            svg {
+                animation: heartPulse 0.3s ease;
+            }
+        }
+    }
+ 
+
+ @keyframes heartPulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+ }
+
+ // Add 
+  
+ .rating-badge {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #ffffff;
+    z-index: 2;
+    
+    svg {
+      flex-shrink: 0;
+    }
+    
+    span {
+      line-height: 1;
+    }
+  }
+ 
+
+ // Alternative styling without backdrop-filter (for better browser compatibility)
+ .movie-card .rating-badge-alt {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #ffffff;
+  z-index: 2;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+ }
+
+
   /*  .btn {
         position: absolute;
         top: 50%;
@@ -40,3 +132,4 @@
         }
     }
 }
+

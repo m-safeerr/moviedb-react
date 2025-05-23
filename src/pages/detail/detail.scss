@@ -26,7 +26,9 @@
         height: 100px;
         background-image: linear-gradient(to top, $body-bg, rgba($black, 0));
     }
-}
+ }
+
+ 
 
 .movie-content {
     @include flex(flex-start, flex-start);
@@ -112,5 +114,19 @@
 
     &__title {
         margin-bottom: 1.5rem;
+    }
+}
+
+// Add these styles to your detail.scss file
+
+.title-wishlist-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    
+    .title {
+        margin: 0;
+        flex: 1;
     }
 }
